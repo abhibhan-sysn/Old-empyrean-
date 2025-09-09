@@ -100,10 +100,12 @@ section {
 h3 {
   color: #4169E1; /* Blue subheadings */
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding-left: 10px;
   display: block; /* Ensure each subheading on new line */
-  animation: bounceIn 1.2s ease-out;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left; /* Left align for screenshot like look */
 }
 
 p {
@@ -119,7 +121,8 @@ ol li, ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  justify-content: center;
+  justify-content: left; /* Align to left for screenshot like look */
+  margin-left: 10px;
 }
 
 .bearer {
@@ -128,6 +131,8 @@ ol li, ul li {
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
+  width: auto; /* Adjust width for better fit */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .bearer:hover {
@@ -201,6 +206,9 @@ ol li, ul li {
   }
   #main-content {
     padding: 10px;
+  }
+  .bearer-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .bearer {
     width: 100%;
