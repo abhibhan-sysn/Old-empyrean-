@@ -105,7 +105,7 @@ h3 {
   display: block; /* Ensure each subheading on new line */
   font-size: 1.2rem;
   font-weight: bold;
-  text-align: left; /* Left align for screenshot like look */
+  text-align: left;
 }
 
 p {
@@ -121,7 +121,7 @@ ol li, ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  justify-content: left; /* Align to left for screenshot like look */
+  justify-content: left;
   margin-left: 10px;
 }
 
@@ -131,7 +131,7 @@ ol li, ul li {
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
-  width: auto; /* Adjust width for better fit */
+  width: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -163,6 +163,71 @@ ol li, ul li {
 }
 
 .bearer p em {
+  font-style: italic;
+}
+
+#student-council .bearers-list {
+  display: block; /* Reset to block for individual team sections */
+}
+
+#student-council .subheading {
+  color: #4169E1; /* Blue subheadings */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  display: block; /* Ensure each subheading on new line */
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+#student-council .bearer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+#student-council .bearer {
+  background: #F9F9F9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+  width: 200px; /* Fixed width for horizontal alignment */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#student-council .bearer:hover {
+  transform: translateY(-5px);
+}
+
+#student-council .council-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 2px solid #800080;
+  transition: transform 0.3s;
+}
+
+#student-council .council-photo:hover {
+  transform: scale(1.5);
+}
+
+#student-council .bearer p {
+  margin: 0;
+  color: #555;
+}
+
+#student-council .bearer p strong {
+  font-weight: bold;
+}
+
+#student-council .bearer p em {
   font-style: italic;
 }
 
@@ -207,11 +272,16 @@ ol li, ul li {
   #main-content {
     padding: 10px;
   }
-  .bearer-list {
+  #office-administrators .bearers-list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  .bearer {
+  #student-council .bearer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #student-council .bearer {
     width: 100%;
+    max-width: 250px;
   }
 }
 
