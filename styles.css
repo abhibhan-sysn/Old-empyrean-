@@ -47,12 +47,11 @@ h2 {
 }
 
 #top-menu {
-  background: #8A2BE2; /* Dark purple to match theme, slightly lighter than pure #800080 */
+  background: #8A2BE2; /* Dark purple to match theme */
   padding: 10px 0;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure it stays above content */
+  position: static; /* Remove sticky behavior */
+  z-index: 1000;
 }
 
 #top-menu ul {
@@ -129,12 +128,13 @@ ol li, ul li {
 
 .bearer {
   background: #F9F9F9;
-  padding: 15px; /* Increased padding for better spacing */
+  padding: 20px; /* Increased padding to match Office Administrators */
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
   width: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 250px; /* Minimum height to ensure uniformity */
 }
 
 .bearer:hover {
@@ -145,7 +145,7 @@ ol li, ul li {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
   border-radius: 50%;
   border: 2px solid #800080;
   transition: transform 0.3s;
@@ -195,12 +195,13 @@ ol li, ul li {
 
 #student-council .bearer {
   background: #F9F9F9;
-  padding: 15px; /* Increased padding to match Office Administrators */
+  padding: 20px; /* Increased padding to match Office Administrators */
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
-  width: 200px; /* Fixed width for horizontal alignment */
+  width: 250px; /* Increased width to match Office Administrators */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 250px; /* Minimum height to ensure uniformity */
 }
 
 #student-council .bearer:hover {
@@ -211,7 +212,7 @@ ol li, ul li {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
   border-radius: 50%;
   border: 2px solid #800080;
   transition: transform 0.3s;
@@ -294,7 +295,7 @@ ol li, ul li {
   }
   #student-council .bearer {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px; /* Adjusted for mobile to maintain size */
   }
 }
 
