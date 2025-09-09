@@ -36,6 +36,7 @@ h1 {
 h2 {
   color: #800080;
   margin-bottom: 10px;
+  text-align: center; /* Center align all h2 headings */
 }
 
 .moto {
@@ -46,7 +47,7 @@ h2 {
 }
 
 #top-menu {
-  background: #D8BFD8; /* Light purple menu */
+  background: #9370DB; /* Darker purple for menu */
   padding: 10px 0;
   text-align: center;
   position: sticky;
@@ -68,7 +69,7 @@ h2 {
 }
 
 #top-menu ul li a {
-  color: #800080;
+  color: #FFF; /* White text for contrast on dark purple */
   text-decoration: none;
   font-size: 1.1rem;
   padding: 5px 15px;
@@ -76,7 +77,7 @@ h2 {
 }
 
 #top-menu ul li a:hover {
-  background: #E6E6FA; /* Lighter purple hover */
+  background: #8A2BE2; /* Even darker purple hover */
   border-radius: 5px;
   transform: scale(1.1);
 }
@@ -100,7 +101,7 @@ section {
 h3 {
   color: #4169E1; /* Blue subheadings */
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-left: 10px;
   display: block; /* Ensure each subheading on new line */
   font-size: 1.2rem;
@@ -110,6 +111,7 @@ h3 {
 
 p {
   animation: slideInLeft 1.2s ease-out;
+  font-size: 1rem; /* Default font size for paragraphs */
 }
 
 ol li, ul li {
@@ -121,13 +123,13 @@ ol li, ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  justify-content: left;
-  margin-left: 10px;
+  justify-content: center; /* Centered for better look */
+  margin-left: 0; /* Remove left margin for consistency */
 }
 
 .bearer {
   background: #F9F9F9;
-  padding: 10px;
+  padding: 15px; /* Increased padding for better spacing */
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
@@ -156,6 +158,7 @@ ol li, ul li {
 .bearer p {
   margin: 0;
   color: #555;
+  font-size: 0.95rem; /* Adjusted to match Office Administrators size */
 }
 
 .bearer p strong {
@@ -192,7 +195,7 @@ ol li, ul li {
 
 #student-council .bearer {
   background: #F9F9F9;
-  padding: 10px;
+  padding: 15px; /* Increased padding to match Office Administrators */
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
@@ -221,6 +224,7 @@ ol li, ul li {
 #student-council .bearer p {
   margin: 0;
   color: #555;
+  font-size: 0.95rem; /* Increased to match Office Administrators */
 }
 
 #student-council .bearer p strong {
